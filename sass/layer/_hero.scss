@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 320px) {
     max-width: 480px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/background/background.mob/background.mob.jpg);

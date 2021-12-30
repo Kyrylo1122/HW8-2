@@ -1,5 +1,9 @@
 .about {
-  padding-bottom: 0;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+  }
+
   &__list {
     margin: -15px;
     @media screen and (min-width: 768px) {
@@ -35,6 +39,10 @@
     color: var(--first-text-color);
 
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   &__text {
     font-size: 14px;
