@@ -122,6 +122,12 @@
       </div>
     </header>
     <main>
+      <section class="hero">
+        <div class="container hero__container">
+          <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button type="button" class="btn" data-modal-open>Заказать услугу</button>
+        </div>
+      </section>
       <!-------почему мы-------->
       <section class="section about">
         <div class="container">
@@ -175,7 +181,7 @@
           </ul>
         </div>
       </section>
-      -->
+
       <!-- ------Чем мы занимаемся ----- -->
       <section class="section section__our-work">
         <div class="container">
@@ -183,19 +189,38 @@
           <ul class="work">
             <li class="work__item">
               <div class="work__overlay">
-                <img src="./img/box1-min.jpg" alt="клавиатура" width="370" height="294" />
+                <picture
+                  ><source
+                    srcset="./img/box1-min.jpg 1x, ./img/box1-2x-min.jpg 2x"
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/box1-min.jpg" alt="клавиатура" width="370" height="294" />
+                </picture>
+
                 <p class="work__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__overlay">
-                <img src="./img/box2-min.jpg" alt="телефон" width="370" height="294" />
+                <picture
+                  ><source
+                    srcset="./img/box2-min.jpg 1x, ./img/box2-2x-min.jpg 2x"
+                    media="(min-width:1200px)" />
+                  <img src="./img/box2-min.jpg" alt="телефон" width="370" height="294"
+                /></picture>
+
                 <p class="work__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__overlay">
-                <img src="./img/box3-min.jpg" alt="планшет" width="370" height="294" />
+                <picture
+                  ><source
+                    srcset="./img/box3-min.jpg 1x, ./img/box3-2x-min.jpg 2x"
+                    media="(min-width:1200px)" />
+                  <img src="./img/box3-min.jpg" alt="планшет" width="370" height="294"
+                /></picture>
+
                 <p class="work__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
               </div>
             </li>
@@ -256,60 +281,59 @@
       </section>
       <footer class="footer">
         <div class="container footer__container">
-          <div class="tablet-footer">
-            <div class="footer-holder">
-              <a href="./index.html" class="logo logo--footer link"
-                >Web<span class="logo__accent--footer">Studio</span></a
-              >
+          <div class="footer-holder footer__container--item">
+            <a href="./index.html" class="logo logo--footer link"
+              >Web<span class="logo__accent--footer">Studio</span></a
+            >
 
-              <address class="footer-holder__address">г. Киев, пр-т Леси Украинки, 26</address>
-              <ul class="footer-holder__list">
-                <li class="footer-holder__item">
-                  <a href="mailto:info@devstudio.com" class="footer-holder__link link"
-                    >info@devstudio.com
-                  </a>
-                </li>
-                <li class="footer-holder__item">
-                  <a href="tel:+380961111111" class="footer-holder__link link">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="social-footer">
-              <p class="footer__text">ПРИСОЕДИНЯЙТЕСЬ</p>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="" class="social__link--footer social__link">
-                    <svg class="social__icon" width="20px" height="20px">
-                      <use href="./icons.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link--footer social__link">
-                    <svg class="social__icon" width="20px" height="20px">
-                      <use href="./icons.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link--footer social__link">
-                    <svg class="social__icon" width="20px" height="20px">
-                      <use href="./icons.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link--footer social__link">
-                    <svg class="social__icon" width="20px" height="20px">
-                      <use href="./icons.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <address class="footer-holder__address">г. Киев, пр-т Леси Украинки, 26</address>
+            <ul class="footer-holder__list">
+              <li class="footer-holder__item">
+                <a href="mailto:info@devstudio.com" class="footer-holder__link link"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="footer-holder__item">
+                <a href="tel:+380961111111" class="footer-holder__link link">+38 096 111 11 11</a>
+              </li>
+            </ul>
           </div>
-          <div class="footer-subscribe">
+
+          <div class="social-footer footer__container--item">
+            <p class="footer__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link--footer social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link--footer social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link--footer social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link--footer social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-subscribe footer__container--item">
             <p class="footer__text">Подпишитесь на рассылку</p>
             <form>
               <div class="footer-subscribe__form">
