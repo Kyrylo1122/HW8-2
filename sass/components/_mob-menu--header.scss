@@ -6,13 +6,15 @@
 .mob-nav {
   display: none;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding-bottom: 48px;
+  padding-left: 40px;
 
   height: 100vh;
   width: 100%;
+  z-index: 99;
 
   background-color: var(--white-background-color);
   &__link {

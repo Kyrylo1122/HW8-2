@@ -2,8 +2,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--dark-background-color);
-  @media screen and (max-width: 767px) {
-    text-align: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
   &__container {
     @media screen and (min-width: 768px) {
