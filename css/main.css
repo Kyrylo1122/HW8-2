@@ -954,9 +954,8 @@ img {
 }
 
 .modal {
-  width: 528px;
+  max-width: 450px;
   background-color: white;
-  outline: 1px solid crimson;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -966,15 +965,9 @@ img {
   transition: transform var(--animation-duration) var(--cubic-bezier);
 }
 
-@media screen and (min-width: 480px) {
-  .modal {
-    width: 450px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 
@@ -1301,5 +1294,16 @@ li {
 
 button {
   padding: 0;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity var(--animation-duration) var(--cubic-bezier), visibility var(--animation-duration) var(--cubic-bezier);
 }
 /*# sourceMappingURL=main.css.map */
